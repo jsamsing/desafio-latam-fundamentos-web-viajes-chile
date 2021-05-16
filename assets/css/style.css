@@ -1,0 +1,30 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+nav img{
+    max-height: 35px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    color: white;
+}
+
+header {
+width: 100%;
+}
+
+
+.figuritas {
+    height: 33px;
+    width: 100%;
+}
+
+.card img {
+    height: 160px;
+}

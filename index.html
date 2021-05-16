@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Johans Samsing">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/viajes.svg">
+    <title>Viajes Chile | Desarrollo Prueba Johans</title>
+    <!--Llamado a bootstrap 4-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--LLamado a Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!--Llamado a Font Awesome-->
+    <script src="https://kit.fontawesome.com/8689f58f59.js" crossorigin="anonymous"></script>
+    <!--mi hoja de estilos-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--Aqui empieza el Navbar, con Container-->
+    <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent text-light position-fixed">
+                <div class="container">
+                    <a class="navbar-brand text-light" href="#"> <img src="assets/img/viajes.svg" alt="Logo Viajes Chile"> Viajes Chile</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link active text-light" href="#header">Inicio<span class="sr-only">(current)</span></a>
+                        <a class="nav-link text-light" href="#quienes">Quienes Somos</a>
+                        <a class="nav-link text-light" href="#destacados">Destacados</a>
+                        <a class="nav-link text-light" href="#contacto" tabindex="-1" aria-disabled="true">Contacto</a>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+    </div>
+        
+    <!--Aqui Termina el Navbar-->
+
+
+    <!--Aqui Va el Carrousel-->
+    <header class="container-fluid p-0" id="header">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Las Llamas">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="La Picture">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="La Otra">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </header>
+    <!--Hasta Aqui va el Carrousel-->
+
+
+    <!--Aqui van los parrafos-->
+    <article class="container d-none d-sm-block" id="quienes">  
+
+        <h2 class="text-center border border-info border-top-0 border-right-0 border-left-0 py-4 mb-3">¿Quienes somos?</h2>
+        <div class="row py-3">
+            <div class="col-12 col-sm-4 my-2" >
+                <div class="tarjetaicono">
+                    <div class=" bg-info figuritas text-center"><i class="fas fa-plane fa-2x"></i></div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, consectetur rem et animi dolorem temporibus explicabo eligendi aut quia quos natus repellat accusantium corrupti necessitatibus, laudantium, voluptate cupiditate? Sint, laborum!</p> 
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 my-2" >
+                <div class="tarjetaicono">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, consectetur rem et animi dolorem temporibus explicabo eligendi aut quia quos natus repellat accusantium corrupti necessitatibus, laudantium, voluptate cupiditate? Sint, laborum!</p> 
+                    <div class=" bg-info figuritas text-center"><i class="fas fa-mountain fa-2x"></i></div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 my-2" >
+                <div class="tarjetaicono">
+                    <div class=" bg-info figuritas text-center"><i class="fas fa-route fa-2x"></i></div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, consectetur rem et animi dolorem temporibus explicabo eligendi aut quia quos natus repellat accusantium corrupti necessitatibus, laudantium, voluptate cupiditate? Sint, laborum!</p> 
+                </div>
+            </div>
+        </div>
+        
+    </article>
+    <!--aqui terminan los parrafos con iconos-->
+
+
+    <!--Aqui van las Cards-->
+    <section class="container" id="destacados">
+        <h2 class="text-center border border-info border-top-0 border-right-0 border-left-0 mt-4 py-4">Destacados</h2>
+        <div class="row mt-3">
+            <div class="col-12 col-sm-6 col-md-3 my-2">
+                <div class="card bg-info">
+                    <img src="assets/img/card1.jpg" class="card-img-top" alt="Foto del Sur"  data-toggle="tooltip" data-placement="top" title="Conoce el Sur">
+                    <div class="card-body">
+                        <h5>Lorem ipsum dolor sit amet.</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 my-2">
+                <div class="card bg-info">
+                    <img src="assets/img/card2.jpg" class="card-img-top img-fluid" alt="Foto del Sur"  data-toggle="tooltip" data-placement="top" title="El Desierto">
+                    <div class="card-body">
+                        <h5>Lorem ipsum dolor sit amet.</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 my-2">
+                <div class="card bg-info">
+                    <img src="assets/img/card3.jpg" class="card-img-top" alt="Foto del Sur"  data-toggle="tooltip" data-placement="top" title="Laguna Salada">
+                    <div class="card-body">
+                        <h5>Lorem ipsum dolor sit amet.</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 my-2">
+                <div class="card bg-info">
+                    <img src="assets/img/card4.jpg" class="card-img-top" alt="Foto del Sur"  data-toggle="tooltip" data-placement="top" title="Bosque Valdiviano">
+                    <div class="card-body">
+                        <h5>Lorem ipsum dolor sit amet.</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <!--Aqui Terminan las cards-->
+    
+
+
+    <!--Aqui va el formulario-->
+    <div class="container-fluid mb-4 pb-4" id="contacto">
+        <h2 class="text-center border border-info border-top-0 border-right-0 border-left-0 mt-5 py-3">Contacto</h2>
+        <div class="typeform-widget" data-url="https://form.typeform.com/to/RAPYzyzs?typeform-medium=embed-snippet" style="width: 100%; height: 400px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+    </div>
+    <!--Aqui termina el formulario-->
+
+
+    <!--Aqui Empieza el Footer-->
+   
+    <footer class="container-fluid bg-info mx-auto">
+        <div class="row mx-md-n5">
+            <div class="col px-md-5">
+                <div class="p-3">
+                    <span class="text-light h4 font-weight-bold">
+                        VIAJES CHILE
+                    </span>
+                </div>
+            </div>
+            <div class="col px-md-5">
+                <div class="p-3">
+                    <span>
+                        <a href="https://github.com/"><i class="fab fa-github-square fa-2x text-light"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter-square fa-2x text-light"></i></a>
+                        <a href="https://co.linkedin.com/"><i class="fab fa-linkedin fa-2x text-light"></i></a>
+                        <a href="https://co.facebook.com/"><i class="fab fa-facebook fa-2x text-light"></i></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--Llamado al JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <!--Script de tooltip-->
+    <script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+      </script>
+    <!--Mi Script-->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
